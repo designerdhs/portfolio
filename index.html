@@ -1,366 +1,144 @@
-<!DOCTYPE html>
-<html lang="pt-PT">
-<head>
-	<meta charset="UTF-8">
-		<title>Elementor #11 &#8211; davihen27</title>
-<meta name='robots' content='max-image-preview:large' />
-<link rel='dns-prefetch' href='//fonts.googleapis.com' />
-<link rel='dns-prefetch' href='//s.w.org' />
-<style id='global-styles-inline-css' type='text/css'>
-body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-</style>
-<link rel='stylesheet' id='bootstrap-css'  href='/wp-content/themes/shapely/assets/css/bootstrap.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='font-awesome-css'  href='/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='shapely-fonts-css'  href='/fonts.googleapis.com/css?family=Raleway%3A100%2C300%2C400%2C500%2C600%2C700&#038;display=swap' type='text/css' media='all' />
-<link rel='stylesheet' id='flexslider-css'  href='/wp-content/themes/shapely/assets/css/flexslider.css' type='text/css' media='all' />
-<link rel='stylesheet' id='shapely-style-css'  href='/wp-content/themes/shapely/style.css' type='text/css' media='all' />
-<link rel='stylesheet' id='owl.carousel-css'  href='/wp-content/themes/shapely/assets/js/owl-carousel/owl.carousel.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='owl.carousel.theme-css'  href='/wp-content/themes/shapely/assets/js/owl-carousel/owl.theme.default.css' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-icons-css'  href='/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-frontend-css'  href='/wp-content/plugins/elementor/assets/css/frontend-lite.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-post-5-css'  href='/wp-content/uploads/elementor/css/post-5.css' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-pro-css'  href='/wp-content/plugins/elementor-pro/assets/css/frontend.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-global-css'  href='/wp-content/uploads/elementor/css/global.css' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-post-11-css'  href='/wp-content/uploads/elementor/css/post-11.css' type='text/css' media='all' />
-<link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto' type='text/css' media='all' />
-<script type='text/javascript' src='/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
-<script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
-<link rel="canonical" href="/elementor-11/" />
-<style type="text/css"></style>	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
-<body class="page-template page-template-elementor_canvas page page-id-11 has-sidebar-right elementor-default elementor-template-canvas elementor-kit-5 elementor-page elementor-page-11">
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>		<div data-elementor-type="wp-page" data-elementor-id="11" class="elementor elementor-11">
-									<section class="elementor-section elementor-top-section elementor-element elementor-element-6867ea5 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="6867ea5" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;,&quot;animation_delay&quot;:800}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8109657" data-id="8109657" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;none&quot;}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-fa7c4eb elementor-invisible elementor-widget elementor-widget-image" data-id="fa7c4eb" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.6.4 - 13-04-2022 */
-.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="1000" height="1000" src="/wp-content/uploads/2022/04/logodhs.png" class="attachment-large size-large" alt="" loading="lazy" srcset="/wp-content/uploads/2022/04/logodhs.png 1000w, /wp-content/uploads/2022/04/logodhs-300x300.png 300w, /wp-content/uploads/2022/04/logodhs-150x150.png 150w, /wp-content/uploads/2022/04/logodhs-768x768.png 768w" sizes="(max-width: 1000px) 100vw, 1000px" />															</div>
-				</div>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-91a1d74 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="91a1d74" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-ea98976 elementor-invisible" data-id="ea98976" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-cbcb2d1 elementor-widget elementor-widget-heading" data-id="cbcb2d1" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.6.4 - 13-04-2022 */
-.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h2 class="elementor-heading-title elementor-size-default">Criação de artes profissionais para o seu negócio</h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-aeea07b elementor-widget elementor-widget-heading" data-id="aeea07b" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Melhore o desempenho do seu negócio através de artes profissionais para atrair mais clientes.</h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-4746fe9 elementor-align-center elementor-hidden-mobile elementor-widget elementor-widget-button" data-id="4746fe9" data-element_type="widget" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-button-wrapper">
-			<a href="#botao-1" class="elementor-button-link elementor-button elementor-size-md" role="button">
-						<span class="elementor-button-content-wrapper">
-						<span class="elementor-button-text">Quero alavancar o meu négocio</span>
-		</span>
-					</a>
-		</div>
-				</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-bb0fbd5 elementor-invisible" data-id="bb0fbd5" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-483c221 elementor-widget elementor-widget-image" data-id="483c221" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img width="722" height="1024" src="/wp-content/uploads/2022/04/Mockup-722x1024.png" class="attachment-large size-large" alt="" loading="lazy" srcset="/wp-content/uploads/2022/04/Mockup-722x1024.png 722w, /wp-content/uploads/2022/04/Mockup-212x300.png 212w, /wp-content/uploads/2022/04/Mockup-768x1089.png 768w, /wp-content/uploads/2022/04/Mockup.png 900w" sizes="(max-width: 722px) 100vw, 722px" />															</div>
-				</div>
-				<div class="elementor-element elementor-element-153d22a elementor-align-center elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-button" data-id="153d22a" data-element_type="widget" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-button-wrapper">
-			<a href="#botao-1" class="elementor-button-link elementor-button elementor-size-md" role="button">
-						<span class="elementor-button-content-wrapper">
-						<span class="elementor-button-text">Quero alavancar o meu négocio</span>
-		</span>
-					</a>
-		</div>
-				</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-0fa5cad animated-slow elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0fa5cad" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;none&quot;,&quot;animation_delay&quot;:0}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-740cea6" data-id="740cea6" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-0bd26ef elementor-widget elementor-widget-heading" data-id="0bd26ef" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Meus trabalhos - Portfólio</h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-7b5a20c elementor-widget elementor-widget-image-gallery" data-id="7b5a20c" data-element_type="widget" data-widget_type="image-gallery.default">
-				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.6.4 - 13-04-2022 */
-.elementor-image-gallery .gallery-item{display:inline-block;text-align:center;vertical-align:top;width:100%;max-width:100%;margin:0 auto}.elementor-image-gallery .gallery-item img{margin:0 auto}.elementor-image-gallery .gallery-item .gallery-caption{margin:0}.elementor-image-gallery figure img{display:block}.elementor-image-gallery figure figcaption{width:100%}.gallery-spacing-custom .elementor-image-gallery .gallery-icon{padding:0}@media (min-width:768px){.elementor-image-gallery .gallery-columns-2 .gallery-item{max-width:50%}.elementor-image-gallery .gallery-columns-3 .gallery-item{max-width:33.33%}.elementor-image-gallery .gallery-columns-4 .gallery-item{max-width:25%}.elementor-image-gallery .gallery-columns-5 .gallery-item{max-width:20%}.elementor-image-gallery .gallery-columns-6 .gallery-item{max-width:16.666%}.elementor-image-gallery .gallery-columns-7 .gallery-item{max-width:14.28%}.elementor-image-gallery .gallery-columns-8 .gallery-item{max-width:12.5%}.elementor-image-gallery .gallery-columns-9 .gallery-item{max-width:11.11%}.elementor-image-gallery .gallery-columns-10 .gallery-item{max-width:10%}}@media (min-width:480px) and (max-width:767px){.elementor-image-gallery .gallery.gallery-columns-2 .gallery-item,.elementor-image-gallery .gallery.gallery-columns-3 .gallery-item,.elementor-image-gallery .gallery.gallery-columns-4 .gallery-item,.elementor-image-gallery .gallery.gallery-columns-5 .gallery-item,.elementor-image-gallery .gallery.gallery-columns-6 .gallery-item,.elementor-image-gallery .gallery.gallery-columns-7 .gallery-item,.elementor-image-gallery .gallery.gallery-columns-8 .gallery-item,.elementor-image-gallery .gallery.gallery-columns-9 .gallery-item,.elementor-image-gallery .gallery.gallery-columns-10 .gallery-item{max-width:50%}}@media (max-width:479px){.elementor-image-gallery .gallery.gallery-columns-2 .gallery-item,.elementor-image-gallery .gallery.gallery-columns-3 .gallery-item,.elementor-image-gallery .gallery.gallery-columns-4 .gallery-item,.elementor-image-gallery .gallery.gallery-columns-5 .gallery-item,.elementor-image-gallery .gallery.gallery-columns-6 .gallery-item,.elementor-image-gallery .gallery.gallery-columns-7 .gallery-item,.elementor-image-gallery .gallery.gallery-columns-8 .gallery-item,.elementor-image-gallery .gallery.gallery-columns-9 .gallery-item,.elementor-image-gallery .gallery.gallery-columns-10 .gallery-item{max-width:100%}}</style>		<div class="elementor-image-gallery">
-			<div id='gallery-1' class='gallery galleryid-11 gallery-columns-3 gallery-size-full'><figure class='gallery-item'>
-			<div class='gallery-icon landscape'>
-				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="7b5a20c" data-elementor-lightbox-title="AnyConv.com__258771355_3030978197148702_3184196870385565217_n" e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjYsInVybCI6Imh0dHBzOlwvXC9kYXZpaGVuMjcuMDAwd2ViaG9zdGFwcC5jb21cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjJcLzA0XC9BbnlDb252LmNvbV9fMjU4NzcxMzU1XzMwMzA5NzgxOTcxNDg3MDJfMzE4NDE5Njg3MDM4NTU2NTIxN19uLnBuZyIsInNsaWRlc2hvdyI6IjdiNWEyMGMifQ%3D%3D" href='/wp-content/uploads/2022/04/AnyConv.com__258771355_3030978197148702_3184196870385565217_n.png'><img width="1080" height="1080" src="/wp-content/uploads/2022/04/AnyConv.com__258771355_3030978197148702_3184196870385565217_n.png" class="attachment-full size-full" alt="" loading="lazy" srcset="/wp-content/uploads/2022/04/AnyConv.com__258771355_3030978197148702_3184196870385565217_n.png 1080w, /wp-content/uploads/2022/04/AnyConv.com__258771355_3030978197148702_3184196870385565217_n-300x300.png 300w, /wp-content/uploads/2022/04/AnyConv.com__258771355_3030978197148702_3184196870385565217_n-1024x1024.png 1024w, /wp-content/uploads/2022/04/AnyConv.com__258771355_3030978197148702_3184196870385565217_n-150x150.png 150w, /wp-content/uploads/2022/04/AnyConv.com__258771355_3030978197148702_3184196870385565217_n-768x768.png 768w" sizes="(max-width: 1080px) 100vw, 1080px" /></a>
-			</div></figure><figure class='gallery-item'>
-			<div class='gallery-icon landscape'>
-				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="7b5a20c" data-elementor-lightbox-title="VMCOSMETICOS" e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MzEsInVybCI6Imh0dHBzOlwvXC9kYXZpaGVuMjcuMDAwd2ViaG9zdGFwcC5jb21cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjJcLzA0XC9WTUNPU01FVElDT1MucG5nIiwic2xpZGVzaG93IjoiN2I1YTIwYyJ9" href='/wp-content/uploads/2022/04/VMCOSMETICOS.png'><img width="1000" height="1000" src="/wp-content/uploads/2022/04/VMCOSMETICOS.png" class="attachment-full size-full" alt="" loading="lazy" srcset="/wp-content/uploads/2022/04/VMCOSMETICOS.png 1000w, /wp-content/uploads/2022/04/VMCOSMETICOS-300x300.png 300w, /wp-content/uploads/2022/04/VMCOSMETICOS-150x150.png 150w, /wp-content/uploads/2022/04/VMCOSMETICOS-768x768.png 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></a>
-			</div></figure><figure class='gallery-item'>
-			<div class='gallery-icon landscape'>
-				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="7b5a20c" data-elementor-lightbox-title="wandersonalencarlogo" e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MzIsInVybCI6Imh0dHBzOlwvXC9kYXZpaGVuMjcuMDAwd2ViaG9zdGFwcC5jb21cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjJcLzA0XC93YW5kZXJzb25hbGVuY2FybG9nby5wbmciLCJzbGlkZXNob3ciOiI3YjVhMjBjIn0%3D" href='/wp-content/uploads/2022/04/wandersonalencarlogo.png'><img width="1000" height="1000" src="/wp-content/uploads/2022/04/wandersonalencarlogo.png" class="attachment-full size-full" alt="" loading="lazy" srcset="/wp-content/uploads/2022/04/wandersonalencarlogo.png 1000w, /wp-content/uploads/2022/04/wandersonalencarlogo-300x300.png 300w, /wp-content/uploads/2022/04/wandersonalencarlogo-150x150.png 150w, /wp-content/uploads/2022/04/wandersonalencarlogo-768x768.png 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></a>
-			</div></figure><figure class='gallery-item'>
-			<div class='gallery-icon landscape'>
-				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="7b5a20c" data-elementor-lightbox-title="potteralcantaralogo" e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjcsInVybCI6Imh0dHBzOlwvXC9kYXZpaGVuMjcuMDAwd2ViaG9zdGFwcC5jb21cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjJcLzA0XC9wb3R0ZXJhbGNhbnRhcmFsb2dvLnBuZyIsInNsaWRlc2hvdyI6IjdiNWEyMGMifQ%3D%3D" href='/wp-content/uploads/2022/04/potteralcantaralogo.png'><img width="1000" height="1000" src="/wp-content/uploads/2022/04/potteralcantaralogo.png" class="attachment-full size-full" alt="" loading="lazy" srcset="/wp-content/uploads/2022/04/potteralcantaralogo.png 1000w, /wp-content/uploads/2022/04/potteralcantaralogo-300x300.png 300w, /wp-content/uploads/2022/04/potteralcantaralogo-150x150.png 150w, /wp-content/uploads/2022/04/potteralcantaralogo-768x768.png 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></a>
-			</div></figure><figure class='gallery-item'>
-			<div class='gallery-icon landscape'>
-				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="7b5a20c" data-elementor-lightbox-title="comunicaçãodireta2" e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MzUsInVybCI6Imh0dHBzOlwvXC9kYXZpaGVuMjcuMDAwd2ViaG9zdGFwcC5jb21cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjJcLzA0XC9jb211bmljYWNhb2RpcmV0YTIucG5nIiwic2xpZGVzaG93IjoiN2I1YTIwYyJ9" href='/wp-content/uploads/2022/04/comunicacaodireta2.png'><img width="1000" height="1000" src="/wp-content/uploads/2022/04/comunicacaodireta2.png" class="attachment-full size-full" alt="" loading="lazy" srcset="/wp-content/uploads/2022/04/comunicacaodireta2.png 1000w, /wp-content/uploads/2022/04/comunicacaodireta2-300x300.png 300w, /wp-content/uploads/2022/04/comunicacaodireta2-150x150.png 150w, /wp-content/uploads/2022/04/comunicacaodireta2-768x768.png 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></a>
-			</div></figure><figure class='gallery-item'>
-			<div class='gallery-icon landscape'>
-				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="7b5a20c" data-elementor-lightbox-title="WhatsApp Image 2021-09-16 at 11.45.09" e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MzQsInVybCI6Imh0dHBzOlwvXC9kYXZpaGVuMjcuMDAwd2ViaG9zdGFwcC5jb21cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjJcLzA0XC9XaGF0c0FwcC1JbWFnZS0yMDIxLTA5LTE2LWF0LTExLjQ1LjA5LmpwZWciLCJzbGlkZXNob3ciOiI3YjVhMjBjIn0%3D" href='/wp-content/uploads/2022/04/WhatsApp-Image-2021-09-16-at-11.45.09.jpeg'><img width="1000" height="1000" src="/wp-content/uploads/2022/04/WhatsApp-Image-2021-09-16-at-11.45.09.jpeg" class="attachment-full size-full" alt="" loading="lazy" srcset="/wp-content/uploads/2022/04/WhatsApp-Image-2021-09-16-at-11.45.09.jpeg 1000w, /wp-content/uploads/2022/04/WhatsApp-Image-2021-09-16-at-11.45.09-300x300.jpeg 300w, /wp-content/uploads/2022/04/WhatsApp-Image-2021-09-16-at-11.45.09-150x150.jpeg 150w, /wp-content/uploads/2022/04/WhatsApp-Image-2021-09-16-at-11.45.09-768x768.jpeg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></a>
-			</div></figure><figure class='gallery-item'>
-			<div class='gallery-icon landscape'>
-				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="7b5a20c" data-elementor-lightbox-title="Sem Título-6" e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjgsInVybCI6Imh0dHBzOlwvXC9kYXZpaGVuMjcuMDAwd2ViaG9zdGFwcC5jb21cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjJcLzA0XC9TZW0tVGl0dWxvLTYucG5nIiwic2xpZGVzaG93IjoiN2I1YTIwYyJ9" href='/wp-content/uploads/2022/04/Sem-Titulo-6.png'><img width="1000" height="1000" src="/wp-content/uploads/2022/04/Sem-Titulo-6.png" class="attachment-full size-full" alt="" loading="lazy" srcset="/wp-content/uploads/2022/04/Sem-Titulo-6.png 1000w, /wp-content/uploads/2022/04/Sem-Titulo-6-300x300.png 300w, /wp-content/uploads/2022/04/Sem-Titulo-6-150x150.png 150w, /wp-content/uploads/2022/04/Sem-Titulo-6-768x768.png 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></a>
-			</div></figure><figure class='gallery-item'>
-			<div class='gallery-icon landscape'>
-				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="7b5a20c" data-elementor-lightbox-title="258370514_438691921031401_1812426410343441805_n" e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MzYsInVybCI6Imh0dHBzOlwvXC9kYXZpaGVuMjcuMDAwd2ViaG9zdGFwcC5jb21cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjJcLzA0XC8yNTgzNzA1MTRfNDM4NjkxOTIxMDMxNDAxXzE4MTI0MjY0MTAzNDM0NDE4MDVfbi5qcGciLCJzbGlkZXNob3ciOiI3YjVhMjBjIn0%3D" href='/wp-content/uploads/2022/04/258370514_438691921031401_1812426410343441805_n.jpg'><img width="1080" height="1080" src="/wp-content/uploads/2022/04/258370514_438691921031401_1812426410343441805_n.jpg" class="attachment-full size-full" alt="" loading="lazy" srcset="/wp-content/uploads/2022/04/258370514_438691921031401_1812426410343441805_n.jpg 1080w, /wp-content/uploads/2022/04/258370514_438691921031401_1812426410343441805_n-300x300.jpg 300w, /wp-content/uploads/2022/04/258370514_438691921031401_1812426410343441805_n-1024x1024.jpg 1024w, /wp-content/uploads/2022/04/258370514_438691921031401_1812426410343441805_n-150x150.jpg 150w, /wp-content/uploads/2022/04/258370514_438691921031401_1812426410343441805_n-768x768.jpg 768w" sizes="(max-width: 1080px) 100vw, 1080px" /></a>
-			</div></figure><figure class='gallery-item'>
-			<div class='gallery-icon landscape'>
-				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="7b5a20c" data-elementor-lightbox-title="logo3" e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjksInVybCI6Imh0dHBzOlwvXC9kYXZpaGVuMjcuMDAwd2ViaG9zdGFwcC5jb21cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjJcLzA0XC9sb2dvMy5wbmciLCJzbGlkZXNob3ciOiI3YjVhMjBjIn0%3D" href='/wp-content/uploads/2022/04/logo3.png'><img width="1000" height="1000" src="/wp-content/uploads/2022/04/logo3.png" class="attachment-full size-full" alt="" loading="lazy" srcset="/wp-content/uploads/2022/04/logo3.png 1000w, /wp-content/uploads/2022/04/logo3-300x300.png 300w, /wp-content/uploads/2022/04/logo3-150x150.png 150w, /wp-content/uploads/2022/04/logo3-768x768.png 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></a>
-			</div></figure><figure class='gallery-item'>
-			<div class='gallery-icon landscape'>
-				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="7b5a20c" data-elementor-lightbox-title="logodhs" e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MzAsInVybCI6Imh0dHBzOlwvXC9kYXZpaGVuMjcuMDAwd2ViaG9zdGFwcC5jb21cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjJcLzA0XC9sb2dvZGhzLTEucG5nIiwic2xpZGVzaG93IjoiN2I1YTIwYyJ9" href='/wp-content/uploads/2022/04/logodhs-1.png'><img width="1000" height="1000" src="/wp-content/uploads/2022/04/logodhs-1.png" class="attachment-full size-full" alt="" loading="lazy" srcset="/wp-content/uploads/2022/04/logodhs-1.png 1000w, /wp-content/uploads/2022/04/logodhs-1-300x300.png 300w, /wp-content/uploads/2022/04/logodhs-1-150x150.png 150w, /wp-content/uploads/2022/04/logodhs-1-768x768.png 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></a>
-			</div></figure><figure class='gallery-item'>
-			<div class='gallery-icon landscape'>
-				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="7b5a20c" data-elementor-lightbox-title="WhatsApp Image 2021-09-16 at 11.45.12 (1)" e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MzMsInVybCI6Imh0dHBzOlwvXC9kYXZpaGVuMjcuMDAwd2ViaG9zdGFwcC5jb21cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjJcLzA0XC9XaGF0c0FwcC1JbWFnZS0yMDIxLTA5LTE2LWF0LTExLjQ1LjEyLTEuanBlZyIsInNsaWRlc2hvdyI6IjdiNWEyMGMifQ%3D%3D" href='/wp-content/uploads/2022/04/WhatsApp-Image-2021-09-16-at-11.45.12-1.jpeg'><img width="1000" height="1000" src="/wp-content/uploads/2022/04/WhatsApp-Image-2021-09-16-at-11.45.12-1.jpeg" class="attachment-full size-full" alt="" loading="lazy" srcset="/wp-content/uploads/2022/04/WhatsApp-Image-2021-09-16-at-11.45.12-1.jpeg 1000w, /wp-content/uploads/2022/04/WhatsApp-Image-2021-09-16-at-11.45.12-1-300x300.jpeg 300w, /wp-content/uploads/2022/04/WhatsApp-Image-2021-09-16-at-11.45.12-1-150x150.jpeg 150w, /wp-content/uploads/2022/04/WhatsApp-Image-2021-09-16-at-11.45.12-1-768x768.jpeg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></a>
-			</div></figure><figure class='gallery-item'>
-			<div class='gallery-icon landscape'>
-				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="7b5a20c" data-elementor-lightbox-title="sergioroberto" e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDEsInVybCI6Imh0dHBzOlwvXC9kYXZpaGVuMjcuMDAwd2ViaG9zdGFwcC5jb21cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjJcLzA0XC9zZXJnaW9yb2JlcnRvLnBuZyIsInNsaWRlc2hvdyI6IjdiNWEyMGMifQ%3D%3D" href='/wp-content/uploads/2022/04/sergioroberto.png'><img width="1000" height="1000" src="/wp-content/uploads/2022/04/sergioroberto.png" class="attachment-full size-full" alt="" loading="lazy" srcset="/wp-content/uploads/2022/04/sergioroberto.png 1000w, /wp-content/uploads/2022/04/sergioroberto-300x300.png 300w, /wp-content/uploads/2022/04/sergioroberto-150x150.png 150w, /wp-content/uploads/2022/04/sergioroberto-768x768.png 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></a>
-			</div></figure><figure class='gallery-item'>
-			<div class='gallery-icon landscape'>
-				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="7b5a20c" data-elementor-lightbox-title="HEBROMLOGO" e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDIsInVybCI6Imh0dHBzOlwvXC9kYXZpaGVuMjcuMDAwd2ViaG9zdGFwcC5jb21cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjJcLzA0XC9IRUJST01MT0dPLnBuZyIsInNsaWRlc2hvdyI6IjdiNWEyMGMifQ%3D%3D" href='/wp-content/uploads/2022/04/HEBROMLOGO.png'><img width="1000" height="1000" src="/wp-content/uploads/2022/04/HEBROMLOGO.png" class="attachment-full size-full" alt="" loading="lazy" srcset="/wp-content/uploads/2022/04/HEBROMLOGO.png 1000w, /wp-content/uploads/2022/04/HEBROMLOGO-300x300.png 300w, /wp-content/uploads/2022/04/HEBROMLOGO-150x150.png 150w, /wp-content/uploads/2022/04/HEBROMLOGO-768x768.png 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></a>
-			</div></figure><figure class='gallery-item'>
-			<div class='gallery-icon landscape'>
-				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="7b5a20c" data-elementor-lightbox-title="servcleanbanner" e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDMsInVybCI6Imh0dHBzOlwvXC9kYXZpaGVuMjcuMDAwd2ViaG9zdGFwcC5jb21cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjJcLzA0XC9zZXJ2Y2xlYW5iYW5uZXIucG5nIiwic2xpZGVzaG93IjoiN2I1YTIwYyJ9" href='/wp-content/uploads/2022/04/servcleanbanner.png'><img width="1000" height="1000" src="/wp-content/uploads/2022/04/servcleanbanner.png" class="attachment-full size-full" alt="" loading="lazy" srcset="/wp-content/uploads/2022/04/servcleanbanner.png 1000w, /wp-content/uploads/2022/04/servcleanbanner-300x300.png 300w, /wp-content/uploads/2022/04/servcleanbanner-150x150.png 150w, /wp-content/uploads/2022/04/servcleanbanner-768x768.png 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></a>
-			</div></figure><figure class='gallery-item'>
-			<div class='gallery-icon landscape'>
-				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="7b5a20c" data-elementor-lightbox-title="Suzy bolos2" e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTEsInVybCI6Imh0dHBzOlwvXC9kYXZpaGVuMjcuMDAwd2ViaG9zdGFwcC5jb21cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjJcLzA0XC9TdXp5LWJvbG9zMi5wbmciLCJzbGlkZXNob3ciOiI3YjVhMjBjIn0%3D" href='/wp-content/uploads/2022/04/Suzy-bolos2.png'><img width="1000" height="1000" src="/wp-content/uploads/2022/04/Suzy-bolos2.png" class="attachment-full size-full" alt="" loading="lazy" srcset="/wp-content/uploads/2022/04/Suzy-bolos2.png 1000w, /wp-content/uploads/2022/04/Suzy-bolos2-300x300.png 300w, /wp-content/uploads/2022/04/Suzy-bolos2-150x150.png 150w, /wp-content/uploads/2022/04/Suzy-bolos2-768x768.png 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></a>
-			</div></figure>
-		</div>
-		</div>
-				</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-c79ce2f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c79ce2f" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-14f25df" data-id="14f25df" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-396fe7f elementor-widget elementor-widget-heading" data-id="396fe7f" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Processo de criação</h2>		</div>
-				</div>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-c41daad elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c41daad" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-4296df9" data-id="4296df9" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-8db49fc elementor-widget elementor-widget-text-editor" data-id="8db49fc" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.6.4 - 13-04-2022 */
-.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#818a91;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#818a91;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p><b>1. BRIEFING</b></p><p>Nessa etapa são recolhidas as informações sobre seu negócio, o público-alvo e onde a marca será vista. São informações essenciais para o desenvolvimento do projeto.</p>						</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-0b5246c" data-id="0b5246c" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-68ccdb0 elementor-widget elementor-widget-text-editor" data-id="68ccdb0" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<p><b>2. CRIAÇÃO<br /></b></p><p>Nessa etapa as informações recolhidas são aplicadas em pesquisas, referências, tipografia, cores, elementos. Tudo para criar o visual perfeito para seu negócio.</p>						</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-1a752dc" data-id="1a752dc" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-2aebc67 elementor-widget elementor-widget-text-editor" data-id="2aebc67" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<p><b>3. APRESENTAÇÃO<br /></b></p><p>Nessa etapa as informações recolhidas são aplicadas em pesquisas, referências, tipografia, cores, elementos. Tudo para criar o visual perfeito para seu negócio.</p>						</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-d0d45c6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d0d45c6" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-45ea9bd" data-id="45ea9bd" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-6c440c2 elementor-widget elementor-widget-heading" data-id="6c440c2" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Valores</h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-7fa2e32 elementor-widget elementor-widget-menu-anchor" data-id="7fa2e32" data-element_type="widget" data-widget_type="menu-anchor.default">
-				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.6.4 - 13-04-2022 */
-body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div id="botao-1" class="elementor-menu-anchor"></div>
-				</div>
-				</div>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-99a3df3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="99a3df3" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-aa025f2" data-id="aa025f2" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-3e63db5 elementor-widget elementor-widget-heading" data-id="3e63db5" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Arte para redes sociais</h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-e8fece1 elementor-widget elementor-widget-image" data-id="e8fece1" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img width="1024" height="903" src="/wp-content/uploads/2022/04/Mockup-2-1-1024x903.png" class="attachment-large size-large" alt="" loading="lazy" srcset="/wp-content/uploads/2022/04/Mockup-2-1-1024x903.png 1024w, /wp-content/uploads/2022/04/Mockup-2-1-300x265.png 300w, /wp-content/uploads/2022/04/Mockup-2-1-768x677.png 768w, /wp-content/uploads/2022/04/Mockup-2-1-1536x1355.png 1536w, /wp-content/uploads/2022/04/Mockup-2-1.png 1696w" sizes="(max-width: 1024px) 100vw, 1024px" />															</div>
-				</div>
-				<div class="elementor-element elementor-element-b1320a0 elementor-widget elementor-widget-text-editor" data-id="b1320a0" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<div dir="auto">&#8211; 1 Arte Profissional por R$ 30,00</div><div dir="auto">&#8211; 2 Artes Profissionais por R$ 55,00</div><div dir="auto">&#8211; 3 Artes Profissionais por R$ 75,00</div><div dir="auto">&#8211; 4 Artes profissionais por R$ 100,00</div><div dir="auto"> </div><div dir="auto">+ de 4 artes valor com desconto a combinar.</div><div> </div><div> </div>						</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6df0c07" data-id="6df0c07" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-86b092d elementor-widget elementor-widget-heading" data-id="86b092d" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Logotipo Profissional</h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-25cd9b6 elementor-widget elementor-widget-image" data-id="25cd9b6" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img width="1024" height="903" src="/wp-content/uploads/2022/04/Mockup-3-1024x903.png" class="attachment-large size-large" alt="" loading="lazy" srcset="/wp-content/uploads/2022/04/Mockup-3-1024x903.png 1024w, /wp-content/uploads/2022/04/Mockup-3-300x265.png 300w, /wp-content/uploads/2022/04/Mockup-3-768x677.png 768w, /wp-content/uploads/2022/04/Mockup-3-1536x1355.png 1536w, /wp-content/uploads/2022/04/Mockup-3.png 1696w" sizes="(max-width: 1024px) 100vw, 1024px" />															</div>
-				</div>
-				<div class="elementor-element elementor-element-a4ae6b3 elementor-widget elementor-widget-text-editor" data-id="a4ae6b3" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<div dir="auto">&#8211; 1 Logotipo por R$ 45,00</div><div dir="auto">&#8211; 2 Logotipos por R$ 90,00</div><div dir="auto"> </div><div dir="auto">+ de 2 logotipos valor com desconto a combinar.</div>						</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-0fe6443 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0fe6443" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-9c9bcde" data-id="9c9bcde" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-26103a5 elementor-widget elementor-widget-heading" data-id="26103a5" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Pagamento</h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-908fc8b elementor-hidden-mobile elementor-widget elementor-widget-heading" data-id="908fc8b" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default"><P>Formas de pagamento: PIX, Transferência Bancária, Boleto e Cartão de crédito c/juros.
-<p>
-<p>30% de antecipação + 70% depois da arte pronta.</p><p>Preencha os seus dados ao lado, Nossa equipe vai entrar em contato com você o mais breve possível</p></h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-191487e elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-heading" data-id="191487e" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default"><P>Formas de pagamento: PIX, Transferência Bancária, Boleto e Cartão de crédito c/juros.
-<p>
-<p>30% de antecipação + 70% depois da arte pronta.</p><p>Preencha os seus dados abaixo, Nossa equipe vai entrar em contato com você o mais breve possível</p></h2>		</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-aa1930d" data-id="aa1930d" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-7590030 elementor-widget elementor-widget-heading" data-id="7590030" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Faça o seu orçamento</h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-f05188d elementor-button-align-center elementor-widget elementor-widget-form" data-id="f05188d" data-element_type="widget" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;step_type&quot;:&quot;number&quot;,&quot;step_icon_shape&quot;:&quot;rounded&quot;}" data-widget_type="form.default">
-				<div class="elementor-widget-container">
-					<form class="elementor-form" method="post" name="New Form">
-			<input type="hidden" name="post_id" value="11"/>
-			<input type="hidden" name="form_id" value="f05188d"/>
-			<input type="hidden" name="referer_title" value="Elementor #11" />
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
-							<input type="hidden" name="queried_id" value="11"/>
-			
-			<div class="elementor-form-fields-wrapper elementor-labels-above">
-								<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-100 elementor-field-required">
-					<label for="form-field-name" class="elementor-field-label">Nome</label><input size="1" type="text" name="form_fields[name]" id="form-field-name" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="Digite o seu nome" required="required" aria-required="true">				</div>
-								<div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-field_bfd5758 elementor-col-100 elementor-field-required">
-					<label for="form-field-field_bfd5758" class="elementor-field-label">Email</label><input size="1" type="email" name="form_fields[field_bfd5758]" id="form-field-field_bfd5758" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="Digite o seu email" required="required" aria-required="true">				</div>
-								<div class="elementor-field-type-number elementor-field-group elementor-column elementor-field-group-email elementor-col-100 elementor-field-required">
-					<label for="form-field-email" class="elementor-field-label">Número de Telefone (Whatsapp)</label><input type="number" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="Digite o seu telefone" required="required" aria-required="true" min="" max="">				</div>
-								<div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
-					<button type="submit" class="elementor-button elementor-size-md">
-						<span >
-															<span class=" elementor-button-icon">
-																										</span>
-																						<span class="elementor-button-text">Enviar</span>
-													</span>
-					</button>
-				</div>
-			</div>
-		</form>
-				</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-146d884 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="146d884" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5e9c8fd" data-id="5e9c8fd" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-52aa2b1 elementor-widget elementor-widget-heading" data-id="52aa2b1" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Designer DHS - Todos direitos reservados ©  </h2>		</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-							</div>
-				<script type="text/javascript">
-			jQuery( document ).ready( function( $ ) {
-				if ( $( window ).width() >= 767 ) {
-					$( '.navbar-nav > li.menu-item > a' ).click( function() {
-						window.location = $( this ).attr( 'href' );
-					} );
-				}
-			} );
-		</script>
-		<link rel='stylesheet' id='e-animations-css'  href='/wp-content/plugins/elementor/assets/lib/animations/animations.min.css' type='text/css' media='all' />
-<script type='text/javascript' src='/wp-content/themes/shapely/assets/js/skip-link-focus-fix.js' id='shapely-skip-link-focus-fix-js'></script>
-<script type='text/javascript' src='/wp-content/themes/shapely/assets/js/flexslider.min.js' id='flexslider-js'></script>
-<script type='text/javascript' src='/wp-content/themes/shapely/assets/js/owl-carousel/owl.carousel.min.js' id='owl.carousel-js'></script>
-<script type='text/javascript' src='/wp-includes/js/imagesloaded.min.js' id='imagesloaded-js'></script>
-<script type='text/javascript' id='shapely-scripts-js-extra'>
-/* <![CDATA[ */
-var ShapelyAdminObject = {"sticky_header":"1"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='/wp-content/themes/shapely/assets/js/shapely-scripts.js' id='shapely-scripts-js'></script>
-<script type='text/javascript' src='/wp-content/plugins/speed-booster-pack/public/js/inspage.js' id='sbp-ins-page-js'></script>
-<script type='text/javascript' src='/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js' id='elementor-pro-webpack-runtime-js'></script>
-<script type='text/javascript' src='/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js' id='elementor-webpack-runtime-js'></script>
-<script type='text/javascript' src='/wp-content/plugins/elementor/assets/js/frontend-modules.min.js' id='elementor-frontend-modules-js'></script>
-<script type='text/javascript' src='/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js' id='elementor-sticky-js'></script>
-<script type='text/javascript' id='elementor-pro-frontend-js-before'>
-var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/davihen27.000webhostapp.com\/wp-admin\/admin-ajax.php","nonce":"d136b89e2b","urls":{"assets":"https:\/\/davihen27.000webhostapp.com\/wp-content\/plugins\/elementor-pro\/assets\/"},"i18n":{"toc_no_headings_found":"No headings were found on this page."},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"google":{"title":"Google+","has_counter":true},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"pt_PT","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/davihen27.000webhostapp.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
-</script>
-<script type='text/javascript' src='/wp-content/plugins/elementor-pro/assets/js/frontend.min.js' id='elementor-pro-frontend-js'></script>
-<script type='text/javascript' src='/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js' id='elementor-waypoints-js'></script>
-<script type='text/javascript' src='/wp-includes/js/jquery/ui/core.min.js' id='jquery-ui-core-js'></script>
-<script type='text/javascript' id='elementor-frontend-js-before'>
-var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Partilhar no Facebook","shareOnTwitter":"Partilhar no Twitter","pinIt":"Fix\u00e1-lo","download":"Download","downloadImage":"Descarregar Imagem","fullscreen":"\u00c9cr\u00e3 Inteiro","zoom":"Zoom","share":"Partilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Seguinte","close":"Fechar"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Port\u00e1til","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.6.4","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"a11y_improvements":true,"e_import_export":true,"additional_custom_breakpoints":true,"e_hidden_wordpress_widgets":true,"landing-pages":true,"elements-color-picker":true,"favorite-widgets":true,"admin-top-bar":true,"form-submissions":true},"urls":{"assets":"https:\/\/davihen27.000webhostapp.com\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":11,"title":"Elementor%20%2311%20%E2%80%93%20davihen27","excerpt":"","featuredImage":false}};
-</script>
-<script type='text/javascript' src='/wp-content/plugins/elementor/assets/js/frontend.min.js' id='elementor-frontend-js'></script>
-<script type='text/javascript' src='/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js' id='pro-elements-handlers-js'></script>
-	<style>.footer,.generic-footer{margin-bottom:98px}@media (min-width:374px){.footer,.generic-footer{margin-bottom:78px}}@media (min-width:546px){.footer,.generic-footer{margin-bottom:56px}}@media (min-width:1055px){.footer,.generic-footer{margin-bottom:0}}.disclaimer{position:fixed;z-index:9999999;bottom:0;right:0;border-top:2px solid #ff5c62;text-align:center;font-size:14px;font-weight:400;background-color:#fff;padding:5px 10px 5px 10px}.disclaimer a:hover{text-decoration:underline}@media (min-width:1052px){.disclaimer{text-align:right;border-left:2px solid red;border-top-left-radius:10px}}@media (min-width:1920px){.disclaimer{width:60%}}</style><div class="disclaimer">We support Ukraine and condemn war. Push Russian government to act against war. Be brave, vocal and show your support to Ukraine. Follow the latest news <a title="https://www.bbc.com/news/live/world-europe-60517447" target="_blank" href="https://www.bbc.com/news/live/world-europe-60517447" style="color: black;"><b>HERE</b></a></div></body>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="HTTrack is an easy-to-use website mirror utility. It allows you to download a World Wide website from the Internet to a local directory,building recursively all structures, getting html, images, and other files from the server to your computer. Links are rebuiltrelatively so that you can freely browse to the local site (works with any browser). You can mirror several sites together so that you can jump from one toanother. You can, also, update an existing mirror site, or resume an interrupted download. The robot is fully configurable, with an integrated help" />
+	<meta name="keywords" content="httrack, HTTRACK, HTTrack, winhttrack, WINHTTRACK, WinHTTrack, offline browser, web mirror utility, aspirateur web, surf offline, web capture, www mirror utility, browse offline, local  site builder, website mirroring, aspirateur www, internet grabber, capture de site web, internet tool, hors connexion, unix, dos, windows 95, windows 98, solaris, ibm580, AIX 4.0, HTS, HTGet, web aspirator, web aspirateur, libre, GPL, GNU, free software" />
+	<title>Local index - HTTrack Website Copier</title>
+  <!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
+	<style type="text/css">
+	<!--
+
+body {
+	margin: 0;  padding: 0;  margin-bottom: 15px;  margin-top: 8px;
+	background: #77b;
+}
+body, td {
+	font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	}
+
+#subTitle {
+	background: #000;  color: #fff;  padding: 4px;  font-weight: bold; 
+	}
+
+#siteNavigation a, #siteNavigation .current {
+	font-weight: bold;  color: #448;
+	}
+#siteNavigation a:link    { text-decoration: none; }
+#siteNavigation a:visited { text-decoration: none; }
+
+#siteNavigation .current { background-color: #ccd; }
+
+#siteNavigation a:hover   { text-decoration: none;  background-color: #fff;  color: #000; }
+#siteNavigation a:active  { text-decoration: none;  background-color: #ccc; }
+
+
+a:link    { text-decoration: underline;  color: #00f; }
+a:visited { text-decoration: underline;  color: #000; }
+a:hover   { text-decoration: underline;  color: #c00; }
+a:active  { text-decoration: underline; }
+
+#pageContent {
+	clear: both;
+	border-bottom: 6px solid #000;
+	padding: 10px;  padding-top: 20px;
+	line-height: 1.65em;
+	background-image: url(backblue.gif);
+	background-repeat: no-repeat;
+	background-position: top right;
+	}
+
+#pageContent, #siteNavigation {
+	background-color: #ccd;
+	}
+
+
+.imgLeft  { float: left;   margin-right: 10px;  margin-bottom: 10px; }
+.imgRight { float: right;  margin-left: 10px;   margin-bottom: 10px; }
+
+hr { height: 1px;  color: #000;  background-color: #000;  margin-bottom: 15px; }
+
+h1 { margin: 0;  font-weight: bold;  font-size: 2em; }
+h2 { margin: 0;  font-weight: bold;  font-size: 1.6em; }
+h3 { margin: 0;  font-weight: bold;  font-size: 1.3em; }
+h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
+
+.blak { background-color: #000; }
+.hide { display: none; }
+.tableWidth { min-width: 400px; }
+
+.tblRegular       { border-collapse: collapse; }
+.tblRegular td    { padding: 6px;  background-image: url(fade.gif);  border: 2px solid #99c; }
+.tblHeaderColor, .tblHeaderColor td { background: #99c; }
+.tblNoBorder td   { border: 0; }
+
+
+// -->
+</style>
+
+</head>
+
+<table width="76%" border="0" align="center" cellspacing="0" cellpadding="3" class="tableWidth">
+	<tr>
+	<td id="subTitle">HTTrack Website Copier - Open Source offline browser</td>
+	</tr>
+</table>
+<table width="76%" border="0" align="center" cellspacing="0" cellpadding="0" class="tableWidth">
+<tr class="blak">
+<td>
+	<table width="100%" border="0" align="center" cellspacing="1" cellpadding="0">
+	<tr>
+	<td colspan="6"> 
+		<table width="100%" border="0" align="center" cellspacing="0" cellpadding="10">
+		<tr> 
+		<td id="pageContent"> 
+<!-- ==================== End prologue ==================== -->
+
+	<meta name="generator" content="HTTrack Website Copier/3.x">
+	<TITLE>Local index - HTTrack</TITLE>
+</HEAD>
+<BODY>
+<H1 ALIGN=Center>Index of locally available sites:</H1>
+	<TABLE BORDER="0" WIDTH="100%" CELLSPACING="1" CELLPADDING="0">
+		<TR>
+			<TD BACKGROUND="fade.gif">
+				&middot;
+					<A HREF="davihen27.000webhostapp.com/elementor-11/index.html">
+						Elementor #11 &#8211; davihen27
+					</A>		
+			</TD>
+		</TR>
+	</TABLE>
+	<BR>
+	<BR>
+	<BR>
+  	<H6 ALIGN="RIGHT">
+	<I>Mirror and index made by HTTrack Website Copier [XR&amp;CO'2008]</I>
+	</H6>
+	<!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
+	<!-- Thanks for using HTTrack Website Copier! -->
+	<meta HTTP-EQUIV="Refresh" CONTENT="0; URL=davihen27.000webhostapp.com/elementor-11/index.html">
+
+
+<!-- ==================== Start epilogue ==================== -->
+		</td>
+		</tr>
+		</table>
+	</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+
+<table width="76%" border="0" align="center" valign="bottom" cellspacing="0" cellpadding="0">
+	<tr>
+	<td id="footer"><small>&copy; 2008 Xavier Roche & other contributors - Web Design: Leto Kauler.</small></td>
+	</tr>
+</table>
+
+</body>
+
 </html>
 
-<!-- Optimized by Speed Booster Pack v4.5.0 -->
+
